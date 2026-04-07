@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias de HTML5</title>
+</head>
+<body>
+    
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente redimensione o navegador.</p>
+
+        <!--source é uma tag que define diferentes fontes de imagem para diferentes tamanhos de tela. -->
+        <!-- O elemento picture é usado para fornecer diferentes fontes de imagem para diferentes tamanhos de tela. -->
+         <!--max-width é usado para definir o tamanho máximo da tela em que a imagem será exibida. -->
+         <!--min-width é usado para definir o tamanho mínimo da tela em que a imagem será exibida. -->
+         <!-- srcset é usado para fornecer o caminho da imagem para cada tamanho de tela. -->   
+          
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reprodução de Midias</h1>
+    <p>Vamos aprender a reproduzir midias em HTML5.</p>
+    <audio src="midia/(I've Got A) Baby Sister - Reed Mathis.mp3" controls autoplay></audio>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>infelizmente seu navegador não consegue reproduzir esse audio.</p>
+        <a href="midia/guanacast-33.mp3">Clique aqui para baixar o audio.</a>
+    </audio>
+
+    <h2>Formatos de áudio suportados pelos navegadores web</h2>
+    <ul>
+        <li><strong>MIcrosoft Edge</strong></li>
+        <ul>
+            <li>mp4</li>
+            <li>m4v</li>
+        </ul>
+    <br>
+        <li><strong>Apple Safari</strong></li>
+        <ul>
+            <li>mp4</li>
+            <li>m4v</li>
+        </ul>
+        <br>
+        <li><strong>Google Chrome</strong></li>
+        <ul>
+            <li>mp4</li>
+            <li>m4v</li>
+            <li>ogv</li>
+            <li>webm</li>
+        </ul>
+       <br>
+        <li><strong>Mozilla Firefox</strong></li>
+        <ul>
+            <li>webm</li>
+            <li>ogv</li>
+        </ul>
+        <br>
+        <li><strong>Opera GX</strong></li>
+        <ul>
+            <li>webm</li>
+            <li>ogv</li>
+        </ul>
+
+</body>
+</html> 

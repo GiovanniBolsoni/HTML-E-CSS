@@ -1,0 +1,22 @@
+Negrito vs. Strong
+Tag <b> (Bold): Apenas forma. Deixa o texto em negrito, mas não indica que ele é importante. É uma tag não semântica.
+
+Tag <strong>: Semântica. Indica que o texto tem uma importância forte. Visualmente é igual ao negrito, mas para mecanismos de busca e leitores de ecrã, o significado é de destaque real.
+
+Itálico vs. Emphasis
+Tag <i> (Italic): Apenas forma. Inclina o texto sem dar um significado especial.
+
+Tag <em> (Emphasis): Semântica. Indica que o texto deve ter uma ênfase na leitura. Visualmente fica em itálico, mas carrega o sentido de ênfase.
+
+Atalho Útil no VS Code
+Para envolver um texto já escrito com uma tag rapidamente:
+
+Seleciona o texto.
+
+Prime Ctrl + Shift + P.
+
+Digita wrap e escolhe "Emmet: Wrap with Abbreviation".
+
+Digita a tag (ex: strong ou em) e prime Enter.
+
+Conclusão: No HTML5, prefira sempre <strong> e <em> em vez de <b> e <i>. Use o HTML para dar sentido ao conteúdo e deixe o CSS para cuidar da forma.

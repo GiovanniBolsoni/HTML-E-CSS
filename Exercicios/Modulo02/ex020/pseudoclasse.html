@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+
+    <style>
+        /*"height" é altura e "width" é largura
+        "display" define como um elemento HTML é renderizado e se comporta no layout, determinando se ele age como bloco, na mesma linha (inline), ou como um contêiner flex/grid. */
+
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        /* Pseudo-classe são palavras-chave adicionadas á declarações de um seletor após sinal de dois pontos ":" e especificam um estado especial de um elemento
+        
+        ":hover" é uma pseudo-classe que fornece feedback visual ao passar com o cursor sobre ele*/
+
+        div:hover{
+            background-color: yellow;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+</body>
+</html>

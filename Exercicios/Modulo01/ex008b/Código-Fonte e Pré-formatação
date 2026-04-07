@@ -1,0 +1,23 @@
+Código-Fonte e Pré-formatação
+Tag <code>: Usada para trechos de código. Ela aplica uma fonte monoespaçada (onde cada letra ocupa o mesmo espaço), facilitando a leitura de comandos.
+
+Tag <pre>: Mantém a formatação original do texto (espaços, tabs e quebras de linha).
+
+Dica: Use <pre><code>...</code></pre> para exibir blocos de código inteiros indentados corretamente.
+
+2. Citações
+Tag <q> (Quotation): Para citações curtas dentro de um parágrafo. O navegador coloca automaticamente as aspas.
+
+Tag <blockquote>: Para citações longas em bloco. Geralmente cria um recuo (margem) na lateral.
+
+Atributo cite: Pode ser usado dentro de <blockquote> para indicar o link (URL) da fonte original da citação (não aparece visualmente, mas é lido por máquinas).
+
+3. Abreviações
+Tag <abbr>: Usada para siglas e abreviações.
+
+Atributo title: Dentro da tag <abbr>, você coloca o significado completo (ex: <abbr title="HyperText Markup Language">HTML</abbr>). Ao passar o rato/mouse por cima, o navegador exibe o texto completo.
+
+4. Texto Invertido
+Tag <bdo> (Bi-Directional Override): Permite inverter a direção do texto.
+
+Atributo dir: Define a direção (rtl para direita para a esquerda ou ltr para o normal). Exemplo: <bdo dir="rtl"> inverte a frase.

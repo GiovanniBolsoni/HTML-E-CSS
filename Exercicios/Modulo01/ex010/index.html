@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+
+    <h1>Primeira página</h1>
+
+    <h2>Trabalhando com links</h2>
+    <br>
+        <h3>Usando links externos</h3> 
+            
+            <!--tipos de target
+            _self (padrão) - abre na mesma janela
+            _blank - abre em uma nova janela
+            _parent - abre na janela parente
+            _top - abre na janela principal (se estiver em frames)-->
+
+            <p>Voce pode acessar o meu perfil no <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">GitHub</a></p> 
+            
+            <p>Voce pode acessar o meu canal no <a href="https://www.youtube.com/@cursoemvideo" target="_blank" rel="external">Youtube</a></p>
+
+        <h3>Usando Links internos</h3>
+            <p>está é a primeira página do site, se quiser pode ir para a proxima pagina, clique <a href="pag002.html" rel="next">aqui</a></p>
+            <p>para ir a pagina de noticias, clique <a href="noticias/pag003.html" rel="next">aqui</a></p>
+
+        <h3>Links p/ dowload</h3> <!--https://www.iana.org/assignments/media-types/media-types.xhtml-->
+        <ul>
+            <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+            <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+        </ul>
+
+</body>
+</html>

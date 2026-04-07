@@ -1,0 +1,21 @@
+Texto Marcado (Marca-texto)
+Tag <mark>: Cria o efeito de "caneta marca-texto" (fundo amarelo por padrão).
+
+Personalização (CSS): Para mudar a cor, usa-se o estilo:<mark style="background-color: lime;">texto</mark>.(Dica: Para mudar em todos os <mark> do site, define-se no CSS global).
+
+2. Texto Pequeno
+Tag <small>: Indica um texto secundário, como notas de rodapé ou letras miúdas de contratos.
+
+Nota: A tag <big> (para texto grande) tornou-se obsoleta, pois tamanho grande é considerado "forma" (CSS), enquanto o texto pequeno ainda tem valor "semântico" (secundário).
+
+3. Texto Excluído e Inserido (Revisões)
+Tag <del> (Deleted): Risca o texto. Indica que algo foi removido ou não deve ser mais considerado.
+
+Tag <ins> (Inserted): Sublinha o texto. Indica que algo foi adicionado posteriormente.
+
+Semântica: Diferente da tag <u> (apenas sublinhado), o <ins> diz ao navegador que aquela informação é uma inserção nova num documento.
+
+4. Sobrescrito e Subscrito
+Tag <sup> (Superscript): Texto para cima (ex: potências como $x^2$).
+
+Tag <sub> (Subscript): Texto para baixo (ex: fórmulas químicas como $H_2O$).

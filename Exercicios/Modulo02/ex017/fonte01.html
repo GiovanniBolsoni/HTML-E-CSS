@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+        body {
+        font-family: "Work Sans", Arial, Helvetica, sans-serif;
+            /*Medidas Absolutas
+            cm, mm, im, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, ch, rem, vw, vh
+            16px normalemente, 1em = 16px, 1rem = 16px*/
+
+        font-size: 16px;
+        font-weight: normal;
+
+            /*
+            font-weight é o peso da fonte
+            font-width é largura da fonte
+            font-height é altura da fonte
+
+            são aceitos os seguintes valores para font-weight:
+            normal (400), bold (700), bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900
+            */
+            
+        font-style: italic; /*normal, italic, oblique*/
+        }
+
+        h1 {
+        /* font-family: 'Times New Roman', Times, serif;
+        font-size: 2em; 32px
+        font-weight: bolder;
+        font-style: italic;
+
+        Ao inves de escrever cada propriedade de font separada, podemos usar a Shorthand para font, utilizando nessa ordem:
+
+        - font-style, font-weight, font-size, font-family*/
+
+            font: italic bolder 2em 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em; /*24px*/
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Trabalhando com Fontes em CSS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore reiciendis perspiciatis veniam eos excepturi soluta placeat odio magni veritatis, vitae aspernatur omnis fuga quibusdam dignissimos possimus ex tempora vero magnam?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non libero esse beatae unde cum tempore illum doloremque sequi molestiae, ullam, sed exercitationem sapiente vel pariatur, odit consectetur ea consequatur ipsa?</p>
+
+    <h2>Subtitulo do Exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore reiciendis perspiciatis veniam eos excepturi soluta placeat odio magni veritatis, vitae aspernatur omnis fuga quibusdam dignissimos possimus ex tempora vero magnam?</p>
+
+</body>
+</html>
