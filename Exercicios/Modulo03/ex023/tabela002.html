@@ -10,13 +10,24 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        thead > tr > th{ /* Usa para fixar o cabeçalho da tabela durante o scroll */
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         thead, tfoot{
             background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd){  /* ODD para linhas IMPARES e EVEN para linhas PARES (efeito zebrado) */
+            background-color: lightgray;
         }
 
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -31,6 +42,13 @@
         td.abbr{
             text-align: center;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
     </style>
 
 </head>
@@ -39,17 +57,19 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION (TABLE CAPTION) = legenda da tabela
             THEAD (TABLE HEAD) = cabeçalho da tabela
             TBODY (TABLE BODY) = corpo da tabela
             TFOOT (TABLE FOOT) = rodapé da tabela
         -->
 
     <table>
+        <caption>População dos Estados Brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Abreviação</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Abreviação</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -193,7 +213,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <th></th>
                 <th><strong>213.421.037</strong></th>
             </tr>
