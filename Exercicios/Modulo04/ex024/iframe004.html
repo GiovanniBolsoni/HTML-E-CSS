@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes Seguros</title>
+</head>
+<body>
+    <h1>Meu Site Principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, obcaecati. Est, minus placeat? Quod, cupiditate, nemo quisquam expedita fuga eum saepe et cum error, quas reiciendis repellendus quibusdam. Fugiat, repellendus!</p>
+
+    <!-- Iframe com sandbox e referrerpolicy juntos aumentam a segurança do iframe, restringindo recursos e ocultando a origem da navegação. O SANDBOX bloqueia scripts e formulários, enquanto referrerpolicy="no-referrer" impede o envio do cabeçalho Referer, protegendo a privacidade do site principal -->
+
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-forms allow-scripts" refferrerpolicy="no-referrer">
+        Seu navegador não é compatível com iframes...
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero minima ab, veniam nobis similique, aperiam suscipit, quam tempora impedit eligendi esse perspiciatis in id adipisci ea facilis. Vero, omnis laborum.</p>
+
+</body>
+</html>
