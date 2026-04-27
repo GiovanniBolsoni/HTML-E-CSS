@@ -13,10 +13,18 @@
 
 </head>
 <body>
-    <h1>Meu primeiro formulário</h1>
+    <h1> Exemplo de Formulário - 1</h1>
+    <!--form tag para codar formulários-->
+    <!--
+        Use GET para: pesquisas no Google, filtros de produtos, paginação de artigos ou qualquer ação que apenas "leia" informações sem alterar o servidor.
 
+        Use POST para: formulários de login, cadastros de novos usuários, finalização de compras ou upload de arquivos.
+    -->
+    <!--no label sempre cmc o id com "i-xxxx"-->
+    
     <form action="cadastro.php" method="post" autocomplete="off">
         <p>
+            <!--Label facilita leitores de tela para que identifiquem o campo indicando ao usuário qual informação deve ser inserida.-->
             <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome">
         </p>
@@ -24,6 +32,7 @@
             <label for="isobrenome">Sobrenome:</label> 
             <input type="text" name="sobrenome" id="isobrenome">
         </p>
+        
         <p>
             <input type="submit" value="Enviar">
         </p>

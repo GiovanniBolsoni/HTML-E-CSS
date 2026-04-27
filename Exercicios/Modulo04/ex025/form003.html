@@ -6,7 +6,7 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Teste de Formulário</h1>
+    <h1>Exemplo de Formulário - 3</h1>
     <form action="cadastro.php" method="get">
         <p>
             <label for="inome">Nome:</label>
@@ -14,6 +14,7 @@
         </p>
         <p>
             <label for="imedia">Média:</label>
+            <!--step para define o intervalo em campos numéricos-->
             <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1">
         </p>
         <p>
@@ -28,6 +29,7 @@
             <label for="ihora">Horário da Prova</label>
             <input type="time" name="hora" id="ihora" value="00:00">
         </p>
+        
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
