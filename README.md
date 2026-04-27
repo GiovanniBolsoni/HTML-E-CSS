@@ -7,4 +7,4 @@ Projetos realizados:
 
 <a href="https://giovannibolsoni.github.io/HTML-E-CSS/projetos-web/projeto-cordel/cordel.html">Executar Projeto Cordel</a>
 
-<a href="https://giovannibolsoni.github.io/HTML-E-CSS/projetos-web/projeto-cordel/social.html">Executar Projeto Redes Sociais</a>
+<a href="https://giovannibolsoni.github.io/HTML-E-CSS/projetos-web/projeto-social/social.html">Executar Projeto Redes Sociais</a>
