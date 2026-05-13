@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
+    <title>Flexible Box - Direction</title>
 
     <style>
         div.conteiner{
             background-color: lightsalmon;
+            flex-direction: row;
 
-            /*IMPORTANTE*/
             display: flex;
+
+            /* flex-direction: 
+                row -->
+                row-reverse <--
+                column (coluna de norte a sul)      
+                column-reverse (coluna de sul a norte)
+            */
+            flex-direction: row-reverse;
         }
 
         div.item{
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-
-            /*IMPORTANTE*/
-            flex: auto;
+            padding: 10px;
         }
     </style>
 

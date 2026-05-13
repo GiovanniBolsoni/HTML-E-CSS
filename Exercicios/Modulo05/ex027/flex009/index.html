@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
+    <title>Flexible Itens - Flex-Basis</title>
 
     <style>
         div.conteiner{
             background-color: lightsalmon;
 
-            /*IMPORTANTE*/
             display: flex;
+            flex-flow: row wrap;
         }
 
         div.item{
@@ -18,8 +18,8 @@
             border: 1px solid black;
             text-align: center;
 
-            /*IMPORTANTE*/
-            flex: auto;
+            /*A propriedade flex-basis especifica o comprimento inicial de um item flexível. Pode variar por padrão de acordo com o conteudo inserido no item*/
+            flex-basis: 150px;
         }
     </style>
 
@@ -29,11 +29,11 @@
     <div class="conteiner">
         <!--div item é o filho-->
         <div class="item"> Bloco A</div>
-        <div class="item"> Bloco B</div>
+        <div class="item"> Outro conteudo</div>
         <div class="item"> Bloco C</div>
-        <div class="item"> Bloco D</div>
+        <div class="item"> Conteudo um pouco maior</div>
         <div class="item"> Bloco E</div>
-        <div class="item"> Bloco F</div>
+        <div class="item"> Outro conteudo maior ainda, que vai ocupar mais espaço</div>
         <div class="item"> Bloco G</div>
     </div>
 </body>

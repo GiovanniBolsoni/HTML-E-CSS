@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
+    <title>Flexible Box - Justify e Align</title>
 
     <style>
         div.conteiner{
             background-color: lightsalmon;
-
-            /*IMPORTANTE*/
+            height: 300px;
             display: flex;
+            flex-flow: row nowrap;
+
+            /*justify-content: realiza o alinhamento em relação ao main-axis (eixo principal)
+                flex-start
+                flex-end
+                center
+                
+                para espaçamento:
+                space-between
+                space-evenly
+                space-around
+            */
+            justify-content: space-around;
+
+            /*align-items: precisa aumentar o tamanho do conteiner pai
+            realiza o alinhamento em relação ao cross-axis (eixo transversal)
+                stretch
+                flex-start
+                flex-end
+                center
+            */
+            align-items: center;
         }
 
         div.item{
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-
-            /*IMPORTANTE*/
-            flex: auto;
         }
     </style>
 

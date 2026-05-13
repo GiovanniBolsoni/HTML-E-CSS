@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
+    <title>Flexible Box - Align-Content</title>
 
     <style>
         div.conteiner{
             background-color: lightsalmon;
 
-            /*IMPORTANTE*/
             display: flex;
+            flex-flow: row wrap;
+
+            /*align-content: realiza o alinhamento dos elementos no eixo transversal MAS quando estão empacotados
+                stretch
+                flex-start
+                flex-end
+                center
+
+                para espaçamento:
+                space-between
+                space-evenly
+                space-around
+            */
+            align-content: space-around;
+            height: 400px;
         }
 
         div.item{
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-
-            /*IMPORTANTE*/
-            flex: auto;
+            padding: 40px;
         }
     </style>
 
@@ -35,6 +47,11 @@
         <div class="item"> Bloco E</div>
         <div class="item"> Bloco F</div>
         <div class="item"> Bloco G</div>
+        <div class="item"> Bloco H</div>
+        <div class="item"> Bloco I</div>
+        <div class="item"> Bloco J</div>
+        <div class="item"> Bloco K</div>
+        <div class="item"> Bloco L</div>
     </div>
 </body>
 </html>

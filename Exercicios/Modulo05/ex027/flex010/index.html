@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
+    <title>Flexible Itens - Shrink e Grow</title>
 
     <style>
         div.conteiner{
             background-color: lightsalmon;
-
-            /*IMPORTANTE*/
             display: flex;
+            flex-flow: row nowrap;
         }
 
         div.item{
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
+            flex-basis: 250px;
 
-            /*IMPORTANTE*/
-            flex: auto;
+            /*
+            flex-shrink define a capacidade de um item flexível encolher
+            flex-grow define o fator de crescimento de um item flexível
+            */
+            flex-shrink: 1;
+            flex-grow: 1;
         }
     </style>
 
@@ -31,10 +35,6 @@
         <div class="item"> Bloco A</div>
         <div class="item"> Bloco B</div>
         <div class="item"> Bloco C</div>
-        <div class="item"> Bloco D</div>
-        <div class="item"> Bloco E</div>
-        <div class="item"> Bloco F</div>
-        <div class="item"> Bloco G</div>
     </div>
 </body>
 </html>

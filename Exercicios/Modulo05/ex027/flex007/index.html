@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Itens - Order</title>
+
+    <style>
+        div.conteiner{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#i1{
+            order: 0;
+        }
+        div#i2{
+            order: -2;
+        }
+        div#i3{
+            order: 4;
+        }
+        div#i4{
+            order: 8;
+        }
+        div#i5{
+            order: 2;
+        }
+        div#i6{
+            order: 0;
+        }
+        div#i7{
+            order: -4;
+        }
+    </style>
+
+</head>
+<body>
+    <!--div conteiner é o pai-->
+    <div class="conteiner">
+        <!--div item é o filho-->
+        <div class="item" id="i1"> Bloco A</div>
+        <div class="item" id="i2"> Bloco B</div>
+        <div class="item" id="i3"> Bloco C</div>
+        <div class="item" id="i4"> Bloco D</div>
+        <div class="item" id="i5"> Bloco E</div>
+        <div class="item" id="i6"> Bloco F</div>
+        <div class="item" id="i7"> Bloco G</div>
+    </div>
+</body>
+</html>
